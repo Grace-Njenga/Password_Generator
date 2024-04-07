@@ -13,6 +13,61 @@
         <title>Strong Passwords</title>
     </head>
     <body>
+        <section class="container">
+            <div class="contents_container">
+                <h1 class="title">Password Generator</h1>
+                <form action="" class="flex">
+                    <!-- more like a text box to display the password  -->
+                    <input type="text" name="text" id="dispaly" />
+                    <h5 class="note">
+                        NOTE:- The default length shall be 8 characters
+                    </h5>
+
+                    <h2 class="sub-heading">
+                        Specifications for the password:
+                    </h2>
+
+                    <!-- specifications by clicking the checkboxes  -->
+                    <div class="">
+                        <input type="checkbox" name="length" id="length" />
+                        <label for="length">
+                            14 characters or more in length
+                        </label>
+                    </div>
+
+                    <div class="">
+                        <input type="checkbox" name="length" id="short" />
+                        <label for="short"
+                            >Between 8 and 14 characters in length</label
+                        >
+                    </div>
+
+                    <div class="">
+                        <input type="checkbox" name="upper" id="upper" />
+                        <label for="upper">Include uppercase Letters</label>
+                    </div>
+
+                    <div class="">
+                        <input type="checkbox" name="lower" id="lower" />
+                        <label for="lower">Include lowercase Letters</label>
+                    </div>
+
+                    <div class="">
+                        <input type="checkbox" name="numbers" id="numbers" />
+                        <label for="numbers">Include Numbers / Digits</label>
+                    </div>
+
+                    <div class="">
+                        <input type="checkbox" name="special" id="special" />
+                        <label for="special">Include Special Characters</label>
+                    </div>
+
+                    <!-- generate the password button  -->
+                    <button type="submit">Generate Password</button>
+                </form>
+            </div>
+        </section>
+
         <!-- javascript  -->
         <script src="script.js"></script>
     </body>
