@@ -1,2 +1,15 @@
 @media (max-width: 500px) and (min-width: 200px) {
+    .container {
+        /* Change to static positioning */
+        position: static;
+        /* Reset transform */
+        transform: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100svh;
+    }
+    .contents_container {
+        padding: 1em;
+    }
 }

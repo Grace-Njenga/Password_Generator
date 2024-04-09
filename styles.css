@@ -61,4 +61,41 @@ h6 {
 .flex {
     display: flex;
     flex-direction: column;
+    gap: 0.5rem;
+}
+
+body {
+    position: relative;
+    background-color: #f9f9716b;
+}
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 30%);
+}
+.contents_container {
+    border: 1px solid #5ec2b1;
+    padding: 2em;
+    border-radius: 1rem;
+    background-color: #cdf27e;
+}
+button {
+    background-color: #6bd1aa;
+    color: #fdfdfd;
+    font-weight: bold;
+    outline: none;
+    border: none;
+    border-radius: 0.6rem;
+    padding: 0.3rem 0;
+}
+button:hover {
+    background-color: #1d8c7d;
+}
+#display {
+    outline: none;
+    height: 2em;
+    border: none;
+    background-color: #1d8c7d;
+    color: #fdfdfd;
 }
