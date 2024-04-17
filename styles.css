@@ -65,14 +65,11 @@ h6 {
 }
 
 body {
-    position: relative;
+    height: 100dvh;
     background-color: #f9f9716b;
-}
-.container {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, 30%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .contents_container {
     border: 1px solid #5ec2b1;
@@ -94,8 +91,31 @@ button:hover {
 }
 #display {
     outline: none;
-    height: 4rem;
     border: none;
-    background-color: #1d8c7d;
-    color: #fdfdfd;
+    display: inline-block;
+    font-size: 18px;
+	letter-spacing: 1px;
+	padding: 12px 10px;
+	height: 50px;
+	width: 100%;
+}
+#display:focus{
+    outline: none;
+    border: none;
+}
+
+.textarea{
+    /* border: 1px solid #1d8c7d; */
+    padding: .5em;
+    border-radius: 1rem;
+    display: flex;
+    align-items: flex-end;
+    gap: 5px;
+    /* grid-template-columns: 1fr auto; */
+    /* background-color: #1d8c7d; */
+}
+ion-icon{
+    font-size: 30px;
+    color: #1d8c7d;
+    cursor: pointer;
 }

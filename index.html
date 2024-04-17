@@ -18,7 +18,11 @@
                 <h1 class="title">Password Generator</h1>
                 <form action="" class="flex">
                     <!-- more like a text box to display the password  -->
-                    <input type="text" name="text" id="dispaly" />
+                    <div class="textarea">
+                        <input type="text" name="text" id="display" />
+                        <span><ion-icon name="copy-outline" id="copy"></ion-icon></span>
+                    </div>
+                    
 
                     <h5 class="note">
                         NOTE:- The default length shall be 8 characters
@@ -30,7 +34,7 @@
 
                     <!-- specifications by clicking the checkboxes  -->
                     <div class="">
-                        <input type="checkbox" name="length" id="length" />
+                        <input type="checkbox" name="length" id="long" />
                         <label for="length">
                             14 characters or more in length
                         </label>
@@ -63,13 +67,22 @@
                         <label for="special">Include Special Characters</label>
                     </div>
 
+                    <div class="">
+                        <input type="checkbox" name="memorable" id="memorable" />
+                        <label for="memorable">Memorable / easy to remember</label>
+                    </div>
+
                     <!-- generate the password button  -->
-                    <button type="submit">Generate Password</button>
+                    <button type="submit" id="generate">Generate Password</button>
                 </form>
             </div>
         </section>
 
         <!-- javascript  -->
         <script src="script.js"></script>
+
+        <!-- ionic-icons  -->
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     </body>
 </html>
