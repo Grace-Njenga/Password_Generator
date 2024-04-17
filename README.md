@@ -10,7 +10,8 @@ Security Considerations:
 Usage:
 --
 
-a. The program will prompt you to choose the desired password length (e.g., "Enter desired password length (8-14 characters): "). 
+a. The program will prompt you to choose the desired password length (e.g., "Enter desired password length (8-14 characters)"). 
+
 b. Choose which character types to include:
 
   - Uppercase letters (y/n)
@@ -23,4 +24,4 @@ c. Click on the *generate password* to get a secure password based on your selec
 d. The generated password will be displayed on the input bar.
 
 e. You can copy the password to your clipboard by pressing the copy logo.
-f.
+
