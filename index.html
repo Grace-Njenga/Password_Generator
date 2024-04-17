@@ -19,62 +19,53 @@
                 <form action="" class="flex">
                     <!-- more like a text box to display the password  -->
                     <div class="textarea">
-                        <input type="text" name="text" id="display" />
-                        <span><ion-icon name="copy-outline" id="copy"></ion-icon></span>
+                        <input type="text" name="text" id="display" value=""/>
+                        <!-- <div id="display"></div> -->
+                        <span><ion-icon name="copy-outline" id="copy" onclick="copyText()"></ion-icon></span>
                     </div>
                     
-
-                    <h5 class="note">
-                        NOTE:- The default length shall be 8 characters
-                    </h5>
-
                     <h2 class="sub-heading">
                         Specifications for the password:
                     </h2>
 
                     <!-- specifications by clicking the checkboxes  -->
-                    <div class="">
-                        <input type="checkbox" name="length" id="long" />
-                        <label for="length">
-                            14 characters or more in length
+                    <div class="spec">
+                        <label for="size">
+                            Password length?
                         </label>
+                        <input type="number" id="size" min='4' max='14' value='14' />
                     </div>
 
-                    <div class="">
-                        <input type="checkbox" name="length" id="short" />
-                        <label for="short"
-                            >Between 8 and 14 characters in length</label
-                        >
-                    </div>
-
-                    <div class="">
-                        <input type="checkbox" name="upper" id="upper" />
+                    <div class="spec">
                         <label for="upper">Include uppercase Letters</label>
+                        <input type="checkbox" name="upper" id="upper" />
                     </div>
 
-                    <div class="">
-                        <input type="checkbox" name="lower" id="lower" />
+                    <div class="spec">
                         <label for="lower">Include lowercase Letters</label>
+                        <input type="checkbox" name="lower" id="lower" />
                     </div>
 
-                    <div class="">
-                        <input type="checkbox" name="numbers" id="numbers" />
+                    <div class="spec">
                         <label for="numbers">Include Numbers / Digits</label>
+                        <input type="checkbox" name="numbers" id="numbers" />
                     </div>
 
-                    <div class="">
-                        <input type="checkbox" name="special" id="special" />
+                    <div class="spec">
                         <label for="special">Include Special Characters</label>
+                        <input type="checkbox" name="special" id="special" />
                     </div>
 
-                    <div class="">
+                    <!-- <div class="spec">
+                        <label for="memorable">Easy to remember password</label>
                         <input type="checkbox" name="memorable" id="memorable" />
-                        <label for="memorable">Memorable / easy to remember</label>
-                    </div>
+                    </div> -->
 
-                    <!-- generate the password button  -->
-                    <button type="submit" id="generate">Generate Password</button>
                 </form>
+
+                
+                <!-- generate the password button  -->
+                <button type="submit" id="generate">Generate Password</button>
             </div>
         </section>
 
