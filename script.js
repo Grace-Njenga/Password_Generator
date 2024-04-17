@@ -39,13 +39,23 @@ let numbersStr = '0123456789';
         let allStr = 'jY=Sn@Vt$&hA$jL@sB_mP&nV)cRL*gF';
         result.value = allStr.slice(random, random + +size.value);
     }
+    else if(uppercase.checked && symbols.checked){
+        let random = Math.floor(Math.random() * 10);
+        let allStr = 'jY=Sn@Vt$&hA$jL@sB_mP&nV)cRL*gF';
+        result.value = allStr.slice(random, random + +size.value);
+    }
+    else if(uppercase.checked && numbers.checked){
+        let random = Math.floor(Math.random() * 10);
+        let allStr = 'jY=Sn@Vt$&hA$jL@sB_mP&nV)cRL*gF';
+        result.value = allStr.slice(random, random + +size.value);
+    }
     else if(uppercase.checked && lowercase.checked){
         let random = Math.floor(Math.random() * 10);
         let allStr = 'hAjLsBmPnVcRLgFkGvEjIgOpScTnY';
         result.value = allStr.slice(random, random + +size.value);
     }else if(symbols.checked && numbers.checked){
         let random = Math.floor(Math.random() * 10);
-        let allStr = '&5$9@5_1&6)5*32@4\&=9!5<0#3}0+';
+        let allStr = '&5$9@5_1&6)5*32@4/8=9!5<0#3}0+';
         result.value = allStr.slice(random, random + +size.value);
     }
     else if(symbols.checked){
@@ -61,7 +71,7 @@ let numbersStr = '0123456789';
         let random = Math.floor(Math.random() * 10);
         result.value = lowercaseStr.slice(random, random + +size.value);
 
-    }else if(upercase.checked){
+    }else if(uppercase.checked){
         let random = Math.floor(Math.random() * 10);
         result.value = upercaseStr.slice(random, random + +size.value);
     }
