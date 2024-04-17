@@ -19,5 +19,8 @@ b. Choose which character types to include:
   - Symbols (y/n)
 
 c. Click on the *generate password* to get a secure password based on your selections.
+
 d. The generated password will be displayed on the input bar.
+
 e. You can copy the password to your clipboard by pressing the copy logo.
+f.
